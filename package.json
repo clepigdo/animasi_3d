@@ -1,0 +1,31 @@
+{
+  "name": "divisi-semesta-cute-voxel",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "remotion studio src/index.ts",
+    "build": "remotion bundle src/index.ts",
+    "render": "remotion render src/index.ts NikoGravityTest out/niko-gravity-test.mp4 --codec h264 --concurrency 2",
+    "still": "remotion still src/index.ts NikoGravityTest out/preview.png --frame 640",
+    "atm" : "remotion studio src/atm/index.ts",
+   "atm:still": "remotion still src/atm/index.ts ATMEpisode01 out/atm-still.png --frame 300"
+  },
+  "dependencies": {
+    "@react-three/fiber": "^9.1.2",
+    "@remotion/cli": "4.0.528",
+    "@remotion/three": "4.0.528",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "remotion": "4.0.528",
+    "three": "^0.177.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "@types/three": "^0.177.0",
+    "typescript": "^5.8.3"
+  }
+}
+
+
